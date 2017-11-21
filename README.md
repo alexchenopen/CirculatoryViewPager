@@ -42,4 +42,29 @@ compile "com.github.alexchenopen:CirculatoryViewPager:0.0.1"
             app:circulationCount="600"
             app:isCirculatory="true"
             app:orientation="vertical"/>
-            ```
+            
+```
+### 4、自定义的FragmentPagerAdapter需要继承CirculatoryFragmentPagerAdapter
+
+```
+class FragmentAdapter extends CirculatoryFragmentPagerAdapter {
+
+        public FragmentAdapter(FragmentManager fm) {
+            super(fm);
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+            return mFragments.get(position);
+        }
+
+        @Override
+        public int getCount() {
+            return mFragments.size();
+        }
+    }
+ ```
+ ### 5、viewPager绑定自定义的PagerAdapter即可使用
+ ```
+ mViewPager.setAdapter(mAdapter)
+ ```

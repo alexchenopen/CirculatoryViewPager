@@ -32,7 +32,6 @@ compile "com.github.alexchenopen:CirculatoryViewPager:0.0.1"
 ```
 
 ### 3. 在xml中使用该控件
-
 ```
 <com.alex.widget.CirculatoryViewPager
             android:id="@+id/viewpager"
@@ -41,13 +40,13 @@ compile "com.github.alexchenopen:CirculatoryViewPager:0.0.1"
             android:layout_gravity="center"
             app:circulationCount="600"
             app:isCirculatory="true"
-            app:orientation="vertical"/>
-            
+            app:orientation="vertical"/>   
 ```
 ### 4、自定义的FragmentPagerAdapter需要继承CirculatoryFragmentPagerAdapter
-
 ```
-class FragmentAdapter extends CirculatoryFragmentPagerAdapter {
+mAdapter = new MyFragmentPagerAdapter(getSupportFragmentManager());
+...
+class MyFragmentPagerAdapter extends CirculatoryFragmentPagerAdapter {
 
         public FragmentAdapter(FragmentManager fm) {
             super(fm);

@@ -43,7 +43,7 @@
             android:layout_gravity="center"
             app:circulationCount="600"
             app:isCirculatory="true"
-            app:orientation="horizontal"/>
+            app:orientation="vertical"/>
 
 
         <TextView

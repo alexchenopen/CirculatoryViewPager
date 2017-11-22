@@ -1,8 +1,8 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.github.dcendents.android-maven'
-apply plugin: 'com.jfrog.bintray'
-group='com.github.alexchenopen'
-version = "0.0.1"
+//apply plugin: 'com.github.dcendents.android-maven'
+//apply plugin: 'com.jfrog.bintray'
+//group='com.github.alexchenopen'
+//version = "0.0.1"
 
 android {
     compileSdkVersion 27

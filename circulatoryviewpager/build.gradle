@@ -1,12 +1,13 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
-group='com.alex.widget'
-version = "0.0.1"
+group='com.github.alexchenopen'
+version = "0.0.2"
 
 android {
     compileSdkVersion 27
     buildToolsVersion "27.0.1"
+    resourcePrefix "viewpager"
 
 
     defaultConfig {

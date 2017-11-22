@@ -28,7 +28,7 @@ allprojects {
 ### 2. 在Module的build.gradle添加依赖
 
 ```
-compile "com.github.alexchenopen:CirculatoryViewPager:0.0.1"
+compile "com.github.alexchenopen:CirculatoryViewPager:0.0.2"
 ```
 
 ### 3. 在xml中使用该控件
